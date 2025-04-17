@@ -1,0 +1,58 @@
+/*
+ * TIMER2_Config.h
+ *
+ * Created: 18/09/2024 02:06:23 AM
+ *  Author: AbdUllah
+ */ 
+
+
+#ifndef TIMER2_CONFIG_H_
+#define TIMER2_CONFIG_H_
+/*
+ * choose from:
+ *   TIMER2_PRESCALER_1
+ *   TIMER2_PRESCALER_8
+ *   TIMER2_PRESCALER_32
+ *   TIMER2_PRESCALER_64
+ *   TIMER2_PRESCALER_128
+ *   TIMER2_PRESCALER_256
+ *   TIMER2_PRESCALER_1024
+ */
+#define TIMER2_PRESCALER     TIMER2_PRESCALER_32
+
+
+
+/*
+ *   choose from :
+ *   TIMER2_NORMAL_MODE
+ *   TIMER2_CTC_MODE
+ *   TIMER2_PHASECORRECT_MODE
+ *   TIMER2_FASTPWM_MODE
+ *
+ */
+#define TIMER2_MODE   TIMER2_FASTPWM_MODE
+/*
+ * choose from :
+ *  Non PWM:
+ *   TIMER2_OC2_DISCONNECTED
+ *   TIMER2_OC2_TOG
+ *   TIMER2_OC2_CLEAR
+ *   TIMER2_OC2_SET
+ *   TIMER_OC2_PWM_NON_INVERTING
+ *   TIMER_OC2_PWM_INVERTING
+ */
+#define TIMER2_OC2_MODE  TIMER_OC2_PWM_NON_INVERTING
+
+
+
+/*
+ * select F_OSC
+ */
+#define F_OSC	8
+
+
+
+
+
+
+#endif /* TIMER2_CONFIG_H_ */
